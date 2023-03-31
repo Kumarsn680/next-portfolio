@@ -27,9 +27,12 @@ const Header = () => {
           </Link>
         </div>
         <div className="w-48 flex justify-evenly items-center">
-          <GitHub />
-          <LinkedIn />
-          <Instagram />
+          <Link href={`https://github.com/Kumarsn680`}>
+            <GitHub />
+          </Link>
+          <Link href={`https://www.linkedin.com/in/sudhanshu-kumar-37b3b0193/`}>
+            <LinkedIn />
+          </Link>
         </div>
       </div>
       <div className="w-full flex justify-evenly sm:hidden my-2">
