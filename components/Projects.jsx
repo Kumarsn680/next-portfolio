@@ -52,7 +52,7 @@ const Projects = () => {
             <p className="my-1">{project.description}</p>
             <div className="flex justify-evenly text-white my-2">
               {project.stack.map((projectstack) => (
-                <span className="font-semibold">{projectstack}</span>
+                <span key={projectstack} className="font-semibold">{projectstack}</span>
               ))}
             </div>
           </div>
