@@ -13,7 +13,7 @@ const Achievements = () => {
     <h1 className='text-white mx-10 my-5 text-5xl font-semibold'>Achievements</h1>
     <div id="achievements">
         {
-            achivementlist.map((item)=>(<span className='text-xl text-yellow-300 font-semibold block my-2 mx-10'>{item}</span>))
+            achivementlist.map((item)=>(<span key={item} className='text-xl text-yellow-300 font-semibold block my-2 mx-10'>{item}</span>))
         }
     </div>
     </>

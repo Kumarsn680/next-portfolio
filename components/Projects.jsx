@@ -39,7 +39,7 @@ const Projects = () => {
       <h1 className="text-white mx-10 my-5 text-5xl font-semibold">Projects</h1>
       <div id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:grid-cols-3 2xl:grid-cols-4">
         {projectlist.map((project) => (
-          <div className="text-white px-2 border border-slate-500 rounded-lg shadow-md shadow-slate-50">
+          <div key={project.title} className="text-white px-2 border border-slate-500 rounded-lg shadow-md shadow-slate-50">
             <Image
               src={project.image.portfolio}
               width={400}
